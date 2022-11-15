@@ -1,0 +1,212 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  background-color: none;
+}
+.container {
+  /* background-color: #fff; */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  height: 7vh;
+  place-items: center;
+}
+.logo h1 {
+  font-variant: small-caps;
+  /* font-family: sans-serif; */
+  font-size: 1.8rem;
+  color: #e65;
+  font-family: "Dancing Script", cursive;
+  position: relative;
+}
+.logo h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  background-color: #e65;
+  left: 0;
+  transform: rotateZ(-5deg);
+}
+.logo h4 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.logo h4 {
+  background-color: #e65;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.style {
+  width: 900px;
+  height: inherit;
+  z-index: -1;
+  position: absolute;
+  background-color: rgba(23, 0, 0, 0.16);
+  top: 0;
+  right: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotateZ(-7deg) translateX(35%) translateY(8%);
+  -webkit-transform: rotateZ(-7deg) translateX(35%) translateY(8%);
+  -moz-transform: rotateZ(-7deg) translateX(35%) translateY(8%);
+  -ms-transform: rotateZ(-7deg) translateX(35%) translateY(8%);
+  -o-transform: rotateZ(-7deg) translateX(35%) translateY(8%);
+}
+.landing-image img {
+  filter: grayscale(10%) brightness(131%) hue-rotate(30deg) saturate(238%)
+    contrast(58%) invert(8%);
+  -webkit-filter: grayscale(10%) brightness(131%) hue-rotate(30deg)
+    saturate(238%) contrast(58%) invert(8%);
+  -moz-filter: grayscale(10%) brightness(131%) hue-rotate(30deg) saturate(238%)
+    contrast(58%) invert(8%);
+}
+
+.landing-grid {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  align-items: center;
+}
+.landing-page{
+  margin-top: 100px;
+  margin-left: 30px;
+}
+.text h1 {
+  font-size: 4.4em;
+  font-family: "Island Moments", cursive;
+  color: #0466ff;
+}
+.text p {
+  font-family: sans-serif;
+  font-size: 1.3em;
+  color: #444;
+  line-height: 1.6em;
+}
+#hire {
+  background-color: #0466ff;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+.text-hire {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text-hire h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: #fff;
+}
+.text-hire button {
+  margin-top: 30px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  outline: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  border: 1px solid #0466ff;
+  color: #0466ff;
+}
+.text-hire button:hover {
+  outline-offset: 5px;
+  transition: 0.4s ease;
+}
+#charcters {
+  background-color: #ecf0f3;
+  margin-top: 20px;
+  padding: 20px;
+}
+form {
+  text-align: center;
+  margin: 12px 0;
+  position: relative;
+}
+form input[type="search"] {
+  width: 28%;
+  /* min-width: 26%; */
+  height: 7vh;
+  padding-left: 10px;
+  border: 2px solid #0466ff;
+  outline: none;
+  border-radius: 10px;
+  position: relative;
+}
+form span {
+  position: absolute;
+  right: 37%;
+  top: 13px;
+  color: #0466ff;
+  cursor: pointer;
+  display: inline-block;
+}
+.charcters-profile {
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.6em;
+  margin-top: 20px;
+}
+.card .card-img img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+.card {
+  background-color: #0466ff;
+  width: 250px;
+  border-radius: 10px;
+  padding: 7px;
+}
+.card-grid {
+  display: flex;
+  gap: 0.5em;
+  place-items: center;
+}
+.card h2 {
+  font-family: sans-serif;
+  color: #fff;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+.card-text p:nth-child(2) {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card-text p:nth-child(3) {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 4px 0;
+  text-transform: capitalize;
+}
+.card-text p:nth-child(4) {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+}

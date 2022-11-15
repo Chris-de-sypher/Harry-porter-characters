@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="./vali2.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>characters</h1>
+        <div class="option">
+            <h4 id="signUp">sign up</h4>
+            <h4 id="login">Login</h4>
+            <h4 id="forget">forgot password</h4>
+        </div>
+        <form novalidate>
+            <div class="msg-button">
+            <span id="fail"></span>
+            <span id="suc"></span>
+            <p id="msg"></p>
+            </div>
+            <div class="forName">
+            <label for="forname">Name</label>
+            <input type="text" name="forname" id="myname"> <span>Please name input shouldn't include special characters'@'</span>
+        </div>
+            <div class="forEmail">
+                <label for="foremail">email</label>
+            <input type="email" name="foremail" id="myemail"> <span>Please email input should include '@'</span>
+            </div>
+            <div class="forTel">
+                <label for="fornum">number</label>
+            <input type="tel" name="fornum" id="mynum"> <span>Please the number input should not be more than (11)</span>
+            </div>
+            <div class="forPass">
+                <label for="forPass">password</label>
+            <input type="password" name="forPass" id="mypass"><div class="eyes"><span><i class="fa-solid fa-eye"></i></span> <span id="eyes-yes"><i class="fa-solid fa-eye-slash"></i></span> </div> <span> password input length should not be less than 5 and greather 16</span>
+            </div> 
+            <div class="btn">
+            <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
